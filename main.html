@@ -69,46 +69,248 @@
             >)
           </h4>
           <div class="tablewrapper">
+            <div></div>
             <table>
               <tbody>
                 <tr>
-                  <td>Dělitelnost, Eukleidův algoritmus.</td>
-                </tr>
-                <tr>
-                  <td>Počítání modulo, prostory Zn zbytkových tříd.</td>
-                </tr>
-                <tr>
-                  <td>Diofantické rovnice, kongruenční rovnice a soustavy.</td>
-                </tr>
-                <tr>
-                  <td>Binární relace a jejich základní vlastnosti.</td>
-                </tr>
-                <tr>
-                  <td>Speciální relace: částečné uspořádání a ekvivalence.</td>
+                  <td><b>Dělitelnost, Euklidův algoritmus.</b></td>
                 </tr>
                 <tr>
                   <td>
-                    Zobrazení. Mohutnost množin, spočetné a nespočetné množiny.
+                    <ul>
+                      <li>Celé číslo A je dělitelné číslem B, pokud po vydělení nezanechá žádný zbytek</li>
+                      <li>Eukleidův algoritmus je známý a efektivní postup, jak najít největšího společného dělitele (NSD) dvou čísel. Tento algoritmus využívá fakt, že NSD dvou čísel se nemění, pokud od většího čísla odečteme menší číslo, nebo přesněji, pokud pracujeme se zbytkem po dělení</li>
+                    </ul>
                   </td>
                 </tr>
                 <tr>
-                  <td>Matematická indukce a její využití.</td>
-                </tr>
-                <tr>
-                  <td>Posloupnosti a součty, asymptotický růst.</td>
-                </tr>
-                <tr>
-                  <td>Lineární rekurentní (rekursivní) rovnice.</td>
+                  <td><b>Počítání modulo, prostory Zn zbytkových tříd.</b></td>
                 </tr>
                 <tr>
                   <td>
-                    Výpočet časové náročnosti rekursivních algoritmů, Master
-                    theorem.
+                    <ul>
+                      <li>
+                          <strong>Počítání modulo:</strong> Počítání modulo je způsob práce s čísly, který nás vrací k omezené sadě hodnot po provedení dělení. V modulu <em>n</em> se výsledky počítají pouze v rozmezí 0 až <em>n - 1</em>, přičemž po dosažení <em>n</em> se vrací zpět na 0. Tento postup se označuje jako „počítání zbytků“. Například „7 modulo 5“ má hodnotu 2, protože 7 děleno 5 má zbytek 2. Takové počítání se používá nejen v matematice, ale i v informatice, kryptografii nebo třeba při určování času na hodinách.
+                      </li>
+                      <li>
+                          <strong>Prostory Zn:</strong> Prostory <em>Z<sub>n</sub></em> jsou matematické struktury tvořené zbytkovými třídami, které se získají v důsledku dělení celých čísel číslem <em>n</em>. V prostoru <em>Z<sub>n</sub></em> reprezentuje každá třída množinu čísel, která dávají stejný zbytek při dělení <em>n</em>. Například v <em>Z<sub>5</sub></em> jsou možné zbytky 0, 1, 2, 3 a 4. Třída <em>2</em> v <em>Z<sub>5</sub></em> zahrnuje všechna čísla, která při dělení 5 dávají zbytek 2 (např. 2, 7, 12, atd.).
+                      </li>
+                      <li>
+                          <strong>Využití prostorů zbytkových tříd Zn:</strong> Prostory zbytkových tříd mají široké využití, například v kryptografii, kde se v RSA algoritmu modulární aritmetika využívá k bezpečnému šifrování. Další aplikace najdeme v informatice a teorii čísel, kde prostory <em>Z<sub>n</sub></em> zjednodušují práci s opakujícími se hodnotami. Prostor <em>Z<sub>n</sub></em> vytváří tzv. cyklickou strukturu, která je užitečná v různých algoritmech, například v hashovacích funkcích nebo při vytváření periodických sekvencí.
+                      </li>
+                  </ul>
+                  
+                </td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>Diofantické rovnice, kongruenční rovnice a soustavy.</b>
                   </td>
                 </tr>
                 <tr>
-                  <td>Princip inkluze a exkluze.</td>
+                  <td>
+                    <ul>
+                      <li>
+                          <strong>Diofantické rovnice:</strong> Diofantické rovnice jsou polynomiální rovnice, které hledají celočíselná řešení. Typickým příkladem je rovnice ve tvaru <em>ax + by = c</em>, kde <em>a</em>, <em>b</em>, a <em>c</em> jsou celá čísla a hledáme celočíselné hodnoty <em>x</em> a <em>y</em>. Takové rovnice jsou pojmenovány po starořeckém matematikovi Diofantovi a často se používají v teorii čísel k řešení problémů s omezeními na celočíselná řešení.
+                      </li>
+                      <li>
+                          <strong>Kongruenční rovnice:</strong> Kongruenční rovnice je rovnice, která vyjadřuje vztah mezi dvěma čísly, pokud dávají stejný zbytek při dělení určitým číslem (modul). Například kongruenční rovnice <em>x ≡ a (mod m)</em> znamená, že rozdíl mezi <em>x</em> a <em>a</em> je dělitelný číslem <em>m</em>. Kongruenční rovnice se hojně využívají v teorii čísel a kryptografii pro práci s periodickými nebo cyklickými strukturami čísel.
+                      </li>
+                      <li>
+                          <strong>Soustavy kongruenčních rovnic:</strong> Soustavy kongruenčních rovnic jsou skupiny kongruenčních rovnic, které musí být splněny současně. Například čínská věta o zbytcích popisuje, jak najít řešení pro proměnnou, která vyhovuje několika kongruencím současně. Takové soustavy jsou užitečné v aplikacích, kde je potřeba pracovat s více moduly současně, například při šifrování nebo v algoritmech pro efektivní výpočet zbytků.
+                      </li>
+                  </ul>                  
+                  </td>
                 </tr>
+                <tr>
+                  <td><b>Binární relace a jejich základní vlastnosti.</b></td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li><strong>Reflexivní relace</strong>: Relace R na množině A je reflexivní, pokud platí, že každý prvek a z množiny A je ve vztahu sám se sebou, tedy (a, a) ∈ R pro každý prvek a ∈ A.</li>
+                      <li><strong>Symetrická relace</strong>: Relace R na množině A je symetrická, pokud pro každý pár (a, b) ∈ R platí, že i (b, a) ∈ R.</li>
+                      <li><strong>Antisymetrická relace</strong>: Relace R na množině A je antisymetrická, pokud pro každý pár (a, b) ∈ R a (b, a) ∈ R platí, že a = b.</li>
+                      <li><strong>Tranzitivní relace</strong>: Relace R na množině A je tranzitivní, pokud pro každý pár (a, b) ∈ R a (b, c) ∈ R platí, že (a, c) ∈ R.</li>
+                      <li><strong>Ekvivalence</strong>: Relace R na množině A je relace ekvivalence, pokud je reflexivní, symetrická a tranzitivní.</li>
+                      <li><strong>Pořadí (uspořádání)</strong>: Relace R na množině A je relace částečného uspořádání, pokud je reflexivní, antisymetrická a tranzitivní. Úplné uspořádání zahrnuje navíc podmínku, že každý prvek je ve vztahu s každým jiným prvkem.</li>
+                  </ul>                  
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>Speciální relace: částečné uspořádání a ekvivalence.</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li><strong>Částečné uspořádání</strong>: Relace R na množině A je částečné uspořádání, pokud splňuje následující vlastnosti:
+                          <ul>
+                              <li><strong>Reflexivita</strong>: Každý prvek a z množiny A je ve vztahu sám se sebou, tedy (a, a) ∈ R pro každý prvek a ∈ A.</li>
+                              <li><strong>Antisymetrie</strong>: Pokud (a, b) ∈ R a (b, a) ∈ R, pak musí platit, že a = b.</li>
+                              <li><strong>Tranzitivita</strong>: Pokud (a, b) ∈ R a (b, c) ∈ R, pak (a, c) ∈ R.</li>
+                          </ul>
+                          Částečné uspořádání tedy umožňuje hierarchii nebo pořadí prvků, ale nemusí být každý prvek ve vztahu s každým jiným prvkem.</li>
+                      <li><strong>Ekvivalence</strong>: Relace R na množině A je relace ekvivalence, pokud splňuje následující vlastnosti:
+                          <ul>
+                              <li><strong>Reflexivita</strong>: Každý prvek a z množiny A je ve vztahu sám se sebou, tedy (a, a) ∈ R pro každý prvek a ∈ A.</li>
+                              <li><strong>Symetrie</strong>: Pokud (a, b) ∈ R, pak také (b, a) ∈ R.</li>
+                              <li><strong>Tranzitivita</strong>: Pokud (a, b) ∈ R a (b, c) ∈ R, pak (a, c) ∈ R.</li>
+                          </ul>
+                          Relace ekvivalence rozděluje množinu A na třídy ekvivalence, kde prvky v každé třídě jsou ve vztahu ekvivalence mezi sebou.</li>
+                  </ul>                  
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>
+                      Zobrazení. Mohutnost množin, spočetné a nespočetné
+                      množiny.
+                    </b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li><strong>Zobrazení</strong>: Zobrazení (funkce) je relace mezi dvěma množinami, kde každý prvek množiny A (definiční obor) je přiřazen přesně jednomu prvku množiny B (obor hodnot).
+                          <ul>
+                              <li><strong>Injektivní zobrazení (prosté)</strong>: Každý prvek množiny B je přiřazen maximálně jednomu prvku množiny A. Pokud f(a₁) = f(a₂), pak a₁ = a₂.</li>
+                              <li><strong>Surjektivní zobrazení (na)</strong>: Každý prvek množiny B má přiřazen alespoň jeden prvek z množiny A, tedy obor hodnot se rovná celému obrazu.</li>
+                              <li><strong>Bijektivní zobrazení</strong>: Zobrazení, které je zároveň injektivní i surjektivní, čili každý prvek z množiny A je přiřazen právě jednomu prvku z množiny B a naopak.</li>
+                          </ul>
+                      </li>
+                      <li><strong>Mohutnost množin</strong>: Mohutnost množiny vyjadřuje „velikost“ množiny, tedy počet jejích prvků.
+                          <ul>
+                              <li><strong>Konečné množiny</strong>: Množiny s konečným počtem prvků.</li>
+                              <li><strong>Nekonečné množiny</strong>: Množiny s nekonečným počtem prvků. Ty mohou být spočetné nebo nespočetné.</li>
+                          </ul>
+                      </li>
+                      <li><strong>Spočetné množiny</strong>: Množina je spočetná, pokud její prvky lze přiřadit do jednoznačné korespondence s přirozenými čísly, tedy lze je „očíslovat“. Typickým příkladem je množina celých nebo racionálních čísel.</li>
+                      <li><strong>Nespočetné množiny</strong>: Množina je nespočetná, pokud není možné její prvky uspořádat do jedné řady (nelze je očíslovat přirozenými čísly). Typickým příkladem je množina reálných čísel.</li>
+                  </ul>                  
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Matematická indukce a její využití.</b></td>
+                </tr>
+                <tr>
+                  <td><ul>
+                    <li><strong>Matematická indukce</strong>: Metoda důkazu používaná v matematice pro ověření tvrzení platných pro všechna přirozená čísla. Důkaz matematickou indukcí probíhá ve dvou základních krocích:
+                        <ul>
+                            <li><strong>Základní krok (báze indukce)</strong>: Dokáže se, že tvrzení platí pro první prvek, obvykle pro n = 1.</li>
+                            <li><strong>Indukční krok</strong>: Předpokládá se, že tvrzení platí pro nějaké přirozené číslo k (tzv. indukční předpoklad), a následně se dokazuje, že pak musí platit i pro k + 1.</li>
+                        </ul>
+                        Pokud jsou oba kroky splněny, tvrzení platí pro všechna přirozená čísla n ≥ 1.
+                    </li>
+                    <li><strong>Využití matematické indukce</strong>: Matematická indukce se často používá k důkazům tvrzení o posloupnostech, vlastnostech čísel a vzorcích. Příklady využití zahrnují:
+                        <ul>
+                            <li>Prokázání vzorců pro součty řad, např. součtu prvních n čísel nebo čtverců.</li>
+                            <li>Důkazy geometrických vzorců a pravidelností, jako je počet úhlopříček v n-úhelníku.</li>
+                            <li>Řešení problémů týkajících se dělitelnosti a jiných aritmetických vlastností čísel.</li>
+                            <li>Prokazování rekurzivních tvrzení nebo výroků závislých na předchozích prvcích.</li>
+                        </ul>
+                    </li>
+                </ul>
+                </td>
+                </tr>
+                <tr>
+                  <td><b>Posloupnosti a součty, asymptotický růst.</b></td>
+                </tr>
+                <tr>
+                  <td><ul>
+                    <li><strong>Posloupnosti</strong>: Uspořádaný seznam čísel (nebo jiných objektů), kde každému přirozenému číslu n je přiřazena hodnota a<sub>n</sub>.
+                        <ul>
+                            <li><strong>Aritmetická posloupnost</strong>: Posloupnost, ve které je rozdíl mezi po sobě jdoucími členy konstantní. Vzorec pro n-tý člen: a<sub>n</sub> = a<sub>1</sub> + (n - 1) * d, kde d je diference.</li>
+                            <li><strong>Geometrická posloupnost</strong>: Posloupnost, kde poměr mezi po sobě jdoucími členy je konstantní. Vzorec pro n-tý člen: a<sub>n</sub> = a<sub>1</sub> * r<sup>n-1</sup>, kde r je kvocient.</li>
+                            <li><strong>Rekurentní posloupnost</strong>: Posloupnost definovaná rekurzivně, kde každý člen závisí na předchozích členech, například Fibonacciho posloupnost.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Součty</strong>: Výrazy reprezentující součet členů posloupnosti. Typické součty zahrnují:
+                        <ul>
+                            <li><strong>Součet aritmetické posloupnosti</strong>: Součet prvních n členů aritmetické posloupnosti: S<sub>n</sub> = (n / 2) * (a<sub>1</sub> + a<sub>n</sub>).</li>
+                            <li><strong>Součet geometrické posloupnosti</strong>: Součet prvních n členů geometrické posloupnosti: S<sub>n</sub> = a<sub>1</sub> * (1 - r<sup>n</sup>) / (1 - r) pro r ≠ 1.</li>
+                            <li><strong>Nekonečný geometrický součet</strong>: Součet nekonečné geometrické řady, pokud |r| < 1: S = a<sub>1</sub> / (1 - r).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Asymptotický růst</strong>: Popisuje, jak se posloupnosti nebo funkce chovají, když jejich vstupy rostou do nekonečna. Používá se k charakterizaci efektivity algoritmů nebo růstových trendů.
+                        <ul>
+                            <li><strong>Notace O (Big O)</strong>: Označuje horní mez růstu funkce. Například O(n) znamená, že funkce roste lineárně.</li>
+                            <li><strong>Notace Ω (Big Omega)</strong>: Označuje dolní mez růstu funkce, tedy minimální rychlost růstu.</li>
+                            <li><strong>Notace Θ (Big Theta)</strong>: Označuje těsnou mez růstu funkce, kdy se jedná o přesnou rychlost růstu.</li>
+                        </ul>
+                        Asymptotický růst je klíčový pro analýzu časové a prostorové složitosti algoritmů.
+                    </li>
+                </ul>
+                </td>
+                </tr>
+                <tr>
+                  <td><b>Lineární rekurentní (rekursivní) rovnice.</b></td>
+                </tr>
+                <tr>
+                  <td><ul>
+                    <li><strong>Lineární rekurentní rovnice</strong>: Rovnice, ve které je každý člen posloupnosti vyjádřen jako lineární kombinace předchozích členů. Lineární rekurentní rovnice se používají k popisu posloupností, kde je každý člen závislý na několika předchozích členech.
+                        <ul>
+                            <li><strong>Homogenní lineární rekurentní rovnice</strong>: Rovnice, kde všechny členy na pravé straně jsou vyjádřeny pomocí předchozích členů posloupnosti bez přidané konstanty nebo funkce. Například rovnice tvaru a<sub>n</sub> = c₁ * a<sub>n-1</sub> + c₂ * a<sub>n-2</sub>.</li>
+                            <li><strong>Nehomogenní lineární rekurentní rovnice</strong>: Rovnice, kde pravá strana obsahuje nejen předchozí členy posloupnosti, ale také další přidaný výraz, například konstantu nebo funkci n. Například rovnice tvaru a<sub>n</sub> = c₁ * a<sub>n-1</sub> + f(n).</li>
+                            <li><strong>Řešení lineárních rekurentních rovnic</strong>: Obvykle zahrnuje nalezení obecného řešení, které obsahuje homogenní řešení (pro homogenní rovnici) a partikulární řešení (pro nehomogenní rovnici).
+                                <ul>
+                                    <li><strong>Charakteristická rovnice</strong>: U homogenních rovnic se používá charakteristická rovnice pro nalezení kořenů, které pomáhají určit tvar řešení. Například pro rovnici a<sub>n</sub> = c₁ * a<sub>n-1</sub> + c₂ * a<sub>n-2</sub> má charakteristická rovnice tvar r² - c₁ * r - c₂ = 0.</li>
+                                    <li><strong>Partikulární řešení</strong>: Pro nehomogenní rovnice je třeba najít partikulární řešení odpovídající přidané funkci nebo konstantě na pravé straně rovnice.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Použití lineárních rekurentních rovnic</strong>: Často se používají v kombinatorice, informatice a dalších oborech k popisu posloupností, jako jsou Fibonacciho čísla, populační růst, a analýza algoritmů.</li>
+                        </ul>
+                    </li>
+                </ul>
+                </td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>
+                      Výpočet časové náročnosti rekursivních algoritmů, Master
+                      theorem.
+                    </b>
+                  </td>
+                </tr>
+                <tr>
+                  <td><ul>
+                    <li><strong>Výpočet časové náročnosti rekurzivních algoritmů</strong>: Analyzování časové složitosti rekurzivních algoritmů zahrnuje určení, jak roste doba běhu algoritmu s rostoucí velikostí vstupu. Tento proces často vede k vytvoření rekurentní rovnice popisující časovou náročnost.
+                        <ul>
+                            <li><strong>Rekurentní rovnice pro časovou složitost</strong>: Pro zjištění časové náročnosti se sestaví rekurentní rovnice, která vyjadřuje časovou složitost T(n) na základě rozdělení problému na menší podproblémy. Například pro algoritmy typu „rozděl a panuj“ může mít rovnice tvar T(n) = a * T(n/b) + f(n), kde a je počet podproblémů, každý o velikosti n/b, a f(n) je čas potřebný k rozdělení problému a sloučení výsledků.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Master theorem (Hlavní věta)</strong>: Teorém poskytuje obecné pravidlo pro řešení rekurentních rovnic tvaru T(n) = a * T(n/b) + f(n), což je typické pro mnoho algoritmů „rozděl a panuj“. Na základě porovnání růstu funkcí lze odhadnout asymptotickou složitost.
+                        <ul>
+                            <li><strong>Případ 1</strong>: Pokud f(n) = O(n<sup>log<sub>b</sub>a - ε</sup>) pro nějaké ε > 0, pak T(n) = Θ(n<sup>log<sub>b</sub>a</sup>).</li>
+                            <li><strong>Případ 2</strong>: Pokud f(n) = Θ(n<sup>log<sub>b</sub>a</sup>), pak T(n) = Θ(n<sup>log<sub>b</sub>a</sup> * log(n)).</li>
+                            <li><strong>Případ 3</strong>: Pokud f(n) = Ω(n<sup>log<sub>b</sub>a + ε</sup>) pro nějaké ε > 0, a pokud platí další podmínka „pravidla regularity“, pak T(n) = Θ(f(n)).</li>
+                        </ul>
+                        Master theorem zjednodušuje výpočty časové složitosti pro algoritmy využívající rekurzivní rozklad problému.
+                    </li>
+                </ul>
+                </td>
+                </tr>
+                <tr>
+                  <td><b>Princip inkluze a exkluze.</b></td>
+                </tr>
+                 <tr><td>
+                  <ul>
+                    <li><strong>Princip inkluze a exkluze</strong>: Metoda používaná v kombinatorice k výpočtu počtu prvků v sjednocení několika množin tím, že se postupně přičítají a odečítají počty prvků v jednotlivých množinách a jejich průnicích. Tento princip je užitečný při počítání prvků, které splňují alespoň jednu z několika podmínek.
+                        <ul>
+                            <li><strong>Dvojice množin</strong>: Pro dvě množiny A a B je počet prvků v jejich sjednocení dán vzorcem |A ∪ B| = |A| + |B| - |A ∩ B|.</li>
+                            <li><strong>Trojice množin</strong>: Pro tři množiny A, B a C je počet prvků v jejich sjednocení dán vzorcem |A ∪ B ∪ C| = |A| + |B| + |C| - |A ∩ B| - |A ∩ C| - |B ∩ C| + |A ∩ B ∩ C|.</li>
+                            <li><strong>Obecný případ pro n množin</strong>: Pro n množin A₁, A₂, ..., Aₙ platí, že počet prvků v jejich sjednocení je dán postupným přičítáním a odečítáním průniků všech kombinací množin podle vzorce:
+                                <ul>
+                                    <li>|A₁ ∪ A₂ ∪ ... ∪ Aₙ| = Σ |A<sub>i</sub>| - Σ |A<sub>i</sub> ∩ A<sub>j</sub>| + Σ |A<sub>i</sub> ∩ A<sub>j</sub> ∩ A<sub>k</sub>| - ... + (-1)<sup>n+1</sup> |A<sub>1</sub> ∩ A<sub>2</sub> ∩ ... ∩ A<sub>n</sub>|.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Využití principu inkluze a exkluze</strong>: Princip inkluze a exkluze se využívá při počítání kombinací, pravděpodobností a k určení počtu prvků splňujících složité podmínky, zejména tam, kde prvky spadají do více kategorií nebo kde je třeba eliminovat duplikace způsobené překrýváním množin.</li>
+                </ul>
+                
+                 </td></tr>
               </tbody>
             </table>
           </div>
@@ -125,52 +327,66 @@
             <table>
               <tbody>
                 <tr>
-                  <td>Lineární prostory.</td>
-                </tr>
-                <tr>
-                  <td>Lineární obal, lineární závislost a nezávislost.</td>
-                </tr>
-                <tr>
-                  <td>Báze, dimenze, souřadnice vektoru v bázi.</td>
-                </tr>
-                <tr>
-                  <td>Lineární zobrazení, matice jako lineární zobrazení.</td>
-                </tr>
-                <tr>
-                  <td>Matice lineárního zobrazení, transformace souřadnic.</td>
+                  <td><b>Lineární prostory.</b></td>
                 </tr>
                 <tr>
                   <td>
-                    Soustavy lineárních rovnic, Frobeniova věta, geometrie
-                    řešení soustav.
+                    <b>Lineární obal, lineární závislost a nezávislost.</b>
                   </td>
                 </tr>
                 <tr>
-                  <td>Determinant čtvercové matice.</td>
-                </tr>
-                <tr>
-                  <td>Vlastní hodnoty a diagonalisace, Jordanův tvar.</td>
-                </tr>
-                <tr>
-                  <td>Abstraktní skalární součin.</td>
-                </tr>
-                <tr>
-                  <td>Ortogonální projekce a ortogonalisace.</td>
-                </tr>
-                <tr>
-                  <td>Metoda nejmenších čtverců, SVD a pseudoinverse.</td>
+                  <td><b>Báze, dimenze, souřadnice vektoru v bázi.</b></td>
                 </tr>
                 <tr>
                   <td>
-                    Vzájemná poloha afinních podprostorů a vzdálenost afinních
-                    podprostorů.
+                    <b>Lineární zobrazení, matice jako lineární zobrazení.</b>
                   </td>
                 </tr>
                 <tr>
-                  <td>Vektorový součin a metrické výpočty v R^n.</td>
+                  <td>
+                    <b>Matice lineárního zobrazení, transformace souřadnic.</b>
+                  </td>
                 </tr>
                 <tr>
-                  <td>Rezerva.</td>
+                  <td>
+                    <b>
+                      Soustavy lineárních rovnic, Frobeniova věta, geometrie
+                      řešení soustav.
+                    </b>
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Determinant čtvercové matice.</b></td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>Vlastní hodnoty a diagonalisace, Jordanův tvar.</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Abstraktní skalární součin.</b></td>
+                </tr>
+                <tr>
+                  <td><b>Ortogonální projekce a ortogonalisace.</b></td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>Metoda nejmenších čtverců, SVD a pseudoinverse.</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>
+                      Vzájemná poloha afinních podprostorů a vzdálenost afinních
+                      podprostorů.
+                    </b>
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Vektorový součin a metrické výpočty v R^n.</b></td>
+                </tr>
+                <tr>
+                  <td><b>Rezerva.</b></td>
                 </tr>
               </tbody>
             </table>
@@ -189,72 +405,95 @@
               <tbody>
                 <tr>
                   <td>
-                    Programové vybavení, překladače, typy překladu, analýza a
-                    syntéza programových úloh, ladění programů; struktura
-                    počítače, strojový kód, paměť
+                    <b>
+                      Programové vybavení, překladače, typy překladu, analýza a
+                      syntéza programových úloh, ladění programů; struktura
+                      počítače, strojový kód, paměť
+                    </b>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    Algoritmus a jeho vlastnosti, způsoby vyjádření algoritmů;
-                    program, programovací jazyky, syntaxe a sémantika, úvod do
-                    jazyka C
+                    <b>
+                      Algoritmus a jeho vlastnosti, způsoby vyjádření algoritmů;
+                      program, programovací jazyky, syntaxe a sémantika, úvod do
+                      jazyka C
+                    </b>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    Proměnná, výrazy, typy operací, asociativita a priorita
-                    operací
-                  </td>
-                </tr>
-                <tr>
-                  <td>Řídící struktury, cykly, základní vstup a výstup</td>
-                </tr>
-                <tr>
-                  <td>
-                    Jednoduché datové typy a jejich reprezentace v paměti
-                    počítače, aproximace reálných hodnot
-                  </td>
-                </tr>
-                <tr>
-                  <td>Strukturované datové typy, pole</td>
-                </tr>
-                <tr>
-                  <td>
-                    Procedury a funkce, parametry funkcí, způsoby předávání,
-                    volání odkazem a hodnotou
+                    <b>
+                      Proměnná, výrazy, typy operací, asociativita a priorita
+                      operací
+                    </b>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    Vícerozměrná pole, pointery a pole, řetězce, pole a
-                    parametry funkcí
+                    <b>Řídící struktury, cykly, základní vstup a výstup</b>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    Pointery, pointerová aritmetika, dynamická správa paměti
+                    <b>
+                      Jednoduché datové typy a jejich reprezentace v paměti
+                      počítače, aproximace reálných hodnot
+                    </b>
                   </td>
                 </tr>
                 <tr>
-                  <td>Rekurze, procedurální programování</td>
+                  <td><b>Strukturované datové typy, pole</b></td>
                 </tr>
                 <tr>
                   <td>
-                    Preprocesor, hlavičkové soubory, projekt, knihovny,
-                    podmíněný překlad, soubory
+                    <b>
+                      Procedury a funkce, parametry funkcí, způsoby předávání,
+                      volání odkazem a hodnotou
+                    </b>
                   </td>
-                </tr>
-                <tr>
-                  <td>Speciální struktury, struktury, uniony, výčtové typy</td>
                 </tr>
                 <tr>
                   <td>
-                    Základní algoritmy řazení a vyhledávání, složitost algoritmů
+                    <b>
+                      Vícerozměrná pole, pointery a pole, řetězce, pole a
+                      parametry funkcí
+                    </b>
                   </td>
                 </tr>
                 <tr>
-                  <td>Abstraktní datový typ</td>
+                  <td>
+                    <b>
+                      Pointery, pointerová aritmetika, dynamická správa paměti
+                    </b>
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Rekurze, procedurální programování</b></td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>
+                      Preprocesor, hlavičkové soubory, projekt, knihovny,
+                      podmíněný překlad, soubory
+                    </b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>Speciální struktury, struktury, uniony, výčtové typy</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>
+                      Základní algoritmy řazení a vyhledávání, složitost
+                      algoritmů
+                    </b>
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Abstraktní datový typ</b></td>
                 </tr>
               </tbody>
             </table>
@@ -276,46 +515,54 @@
           <table cellpadding="0" cellspacing="0">
             <tbody>
               <tr valign="baseline">
-                <td>Reálná čísla. Elementární funkce.</td>
+                <td><b>Reálná čísla. Elementární funkce.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Limita a&nbsp;spojitost funkce.</td>
-              </tr>
-              <tr valign="baseline">
-                <td>Derivace funkce, její vlastnosti a&nbsp;aplikace.</td>
+                <td><b>Limita a&nbsp;spojitost funkce.</b></td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Věty o&nbsp;střední hodnotě. L'Hospitalovo pravidlo, Taylorův
-                  polynom.
+                  <b>Derivace funkce, její vlastnosti a&nbsp;aplikace.</b>
                 </td>
               </tr>
               <tr valign="baseline">
-                <td>Extrémy a&nbsp;průběh funkcí.</td>
+                <td>
+                  <b>
+                    Věty o&nbsp;střední hodnotě. L'Hospitalovo pravidlo,
+                    Taylorův polynom.
+                  </b>
+                </td>
               </tr>
               <tr valign="baseline">
-                <td>Primitivní funkce, základní metody výpočtu.</td>
+                <td><b>Extrémy a&nbsp;průběh funkcí.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Integrace racionálních a&nbsp;dalších typů funkcí.</td>
+                <td><b>Primitivní funkce, základní metody výpočtu.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Riemannův integrál. Newtonova-Leibnizova formule.</td>
+                <td>
+                  <b>Integrace racionálních a&nbsp;dalších typů funkcí.</b>
+                </td>
               </tr>
               <tr valign="baseline">
-                <td>Nevlastní integrál. Aplikace integrálu.</td>
+                <td>
+                  <b>Riemannův integrál. Newtonova-Leibnizova formule.</b>
+                </td>
               </tr>
               <tr valign="baseline">
-                <td>Posloupnost a&nbsp;její limita.</td>
+                <td><b>Nevlastní integrál. Aplikace integrálu.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Číselné řady a&nbsp;kritéria jejich konvergence.</td>
+                <td><b>Posloupnost a&nbsp;její limita.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Úvod do diferenciálních rovnic.</td>
+                <td><b>Číselné řady a&nbsp;kritéria jejich konvergence.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Další témata z matematické analýzy.</td>
+                <td><b>Úvod do diferenciálních rovnic.</b></td>
+              </tr>
+              <tr valign="baseline">
+                <td><b>Další témata z matematické analýzy.</b></td>
               </tr>
             </tbody>
           </table>
@@ -324,53 +571,63 @@
           <table cellpadding="0" cellspacing="0">
             <tbody>
               <tr valign="baseline">
-                <td>Funkce více proměnných, limita, spojitost.</td>
+                <td><b>Funkce více proměnných, limita, spojitost.</b></td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Směrové a&nbsp;parciální derivace, diferenciál
-                  a&nbsp;gradient.
+                  <b>
+                    Směrové a&nbsp;parciální derivace, diferenciál
+                    a&nbsp;gradient.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
-                <td>Derivace složené funkce, derivace vyšších řádů.</td>
+                <td><b>Derivace složené funkce, derivace vyšších řádů.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Jakobiho matice. Lokální extrémy.</td>
+                <td><b>Jakobiho matice. Lokální extrémy.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Vázané extrémy, Lagrangeova metoda.</td>
+                <td><b>Vázané extrémy, Lagrangeova metoda.</b></td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Dvojný a&nbsp;trojný integrál, Fubiniho věta a&nbsp;věta
-                  o&nbsp;substituci.
+                  <b>
+                    Dvojný a&nbsp;trojný integrál, Fubiniho věta a&nbsp;věta
+                    o&nbsp;substituci.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Křivkový integrál funkce, křivkový integrál pole, aplikace.
+                  <b>
+                    Křivkový integrál funkce, křivkový integrál pole, aplikace.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Plošný integrál funkce a&nbsp;pole a&nbsp;jeho aplikace.
+                  <b>
+                    Plošný integrál funkce a&nbsp;pole a&nbsp;jeho aplikace.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
-                <td>Gaussova, Greenova, Stokesova věta.</td>
+                <td><b>Gaussova, Greenova, Stokesova věta.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Potenciál vektorového pole.</td>
+                <td><b>Potenciál vektorového pole.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Základní kritéria konvergence řad.</td>
+                <td><b>Základní kritéria konvergence řad.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Funkční řady, Weierstrasseovo kritérium. Mocninné řady.</td>
+                <td>
+                  <b>Funkční řady, Weierstrasseovo kritérium. Mocninné řady.</b>
+                </td>
               </tr>
               <tr valign="baseline">
-                <td>Taylorovy rozvoje a&nbsp;Fourierovy řady.</td>
+                <td><b>Taylorovy rozvoje a&nbsp;Fourierovy řady.</b></td>
               </tr>
             </tbody>
           </table>
@@ -390,16 +647,16 @@
             Výroková logika
             <tbody>
               <tr valign="baseline">
-                <td>Formální jazyk. Jazyk výrokové logiky.</td>
+                <td><b>Formální jazyk. Jazyk výrokové logiky.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Význam a&nbsp;sémantický důsledek.</td>
+                <td><b>Význam a&nbsp;sémantický důsledek.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Resoluční metoda ve výrokové logice.</td>
+                <td><b>Resoluční metoda ve výrokové logice.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Odvozování důsledků (přirozená dedukce).</td>
+                <td><b>Odvozování důsledků (přirozená dedukce).</b></td>
               </tr>
             </tbody>
           </table>
@@ -409,18 +666,20 @@
           <table cellpadding="0" cellspacing="0">
             <tbody>
               <tr valign="baseline">
-                <td>Jazyk predikátové logiky.</td>
+                <td><b>Jazyk predikátové logiky.</b></td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Význam a&nbsp;sémantický důsledek v&nbsp;predikátové logice.
+                  <b>
+                    Význam a&nbsp;sémantický důsledek v&nbsp;predikátové logice.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
-                <td>Resoluční metoda v&nbsp;predikátové logice.</td>
+                <td><b>Resoluční metoda v&nbsp;predikátové logice.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Reserva: pokročilá témata.</td>
+                <td><b>Reserva: pokročilá témata.</b></td>
               </tr>
             </tbody>
           </table>
@@ -430,22 +689,22 @@
           <table cellpadding="0" cellspacing="0">
             <tbody>
               <tr valign="baseline">
-                <td>Základní pojmy teorie grafů.</td>
+                <td><b>Základní pojmy teorie grafů.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Stromy. Kostry.</td>
+                <td><b>Stromy. Kostry.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Silná souvislost. Acyklické grafy.</td>
+                <td><b>Silná souvislost. Acyklické grafy.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Kreslení jedním tahem.</td>
+                <td><b>Kreslení jedním tahem.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Barvení. Rovinné grafy.</td>
+                <td><b>Barvení. Rovinné grafy.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Reserva: pokročilá témata</td>
+                <td><b>Reserva: pokročilá témata</b></td>
               </tr>
             </tbody>
           </table>
@@ -464,87 +723,113 @@
             <tbody>
               <tr valign="baseline">
                 <td>
-                  Koncepce, historie jazyka a&nbsp;jeho vývoj - Java Virtual
-                  Machine, instalace vývojového prostředí, překlad
-                  a&nbsp;interpretace, syntaxe, primitiva a&nbsp;základní
-                  konstrukty.
+                  <b>
+                    Koncepce, historie jazyka a&nbsp;jeho vývoj - Java Virtual
+                    Machine, instalace vývojového prostředí, překlad
+                    a&nbsp;interpretace, syntaxe, primitiva a&nbsp;základní
+                    konstrukty.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Objektově orientované programování v&nbsp;programovacím jazyku
-                  Java, třídy, rozhraní a&nbsp;objekty; struktura programu,
-                  kompilace a&nbsp;spuštění, předávání parametrů, aplikace
-                  a&nbsp;aplety.
+                  <b>
+                    Objektově orientované programování v&nbsp;programovacím
+                    jazyku Java, třídy, rozhraní a&nbsp;objekty; struktura
+                    programu, kompilace a&nbsp;spuštění, předávání parametrů,
+                    aplikace a&nbsp;aplety.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Řízení běhu programu, základní datové typy, proměnné,
-                  operátory, výjimky.
+                  <b>
+                    Řízení běhu programu, základní datové typy, proměnné,
+                    operátory, výjimky.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Pole, řetězce, základní datové kolekce a&nbsp;iterátory.
+                  <b>
+                    Pole, řetězce, základní datové kolekce a&nbsp;iterátory.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Principy objektového přístupu, třídy a&nbsp;dědičnost, řízení
-                  přístupu, hierarchie tříd, dědění, kompozice, abstraktní
-                  třídy, polymorfismus.
+                  <b>
+                    Principy objektového přístupu, třídy a&nbsp;dědičnost,
+                    řízení přístupu, hierarchie tříd, dědění, kompozice,
+                    abstraktní třídy, polymorfismus.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
-                <td>Datové kolekce a&nbsp;generické datové typy.</td>
+                <td><b>Datové kolekce a&nbsp;generické datové typy.</b></td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Práce se soubory, datové proudy, modely I/O&nbsp;operací.
-                </td>
-              </tr>
-              <tr valign="baseline">
-                <td>
-                  Síťování - způsoby a&nbsp;modely komunikace, síťová API
-                  v&nbsp;programovacím jazyku Java, protokoly UDP, TCP
-                  a&nbsp;HTTP. Aplikace klient / server.
-                </td>
-              </tr>
-              <tr valign="baseline">
-                <td>
-                  Paralelní programování - vlákna a&nbsp;modely vícevláknových
-                  aplikací, synchronizační primitiva.
+                  <b>
+                    Práce se soubory, datové proudy, modely I/O&nbsp;operací.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Příklad vícevláknové aplikace a&nbsp;komunikace mezi vlákny;
-                  rozhraní JNI.
+                  <b>
+                    Síťování - způsoby a&nbsp;modely komunikace, síťová API
+                    v&nbsp;programovacím jazyku Java, protokoly UDP, TCP
+                    a&nbsp;HTTP. Aplikace klient / server.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Grafické uživatelské rozhraní, události a&nbsp;listenery, Java
-                  2D/3D, knihovny AWT a&nbsp;Swing.
+                  <b>
+                    Paralelní programování - vlákna a&nbsp;modely vícevláknových
+                    aplikací, synchronizační primitiva.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Ovládání uživatelských rozhraní, multimediální rozhraní.
+                  <b>
+                    Příklad vícevláknové aplikace a&nbsp;komunikace mezi vlákny;
+                    rozhraní JNI.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Distribuované programování - serializace, propojování modulů
-                  (middleware) a&nbsp;vzdálené volání funkcí, rozhraní Java RMI
-                  a&nbsp;další, např. ICE.
+                  <b>
+                    Grafické uživatelské rozhraní, události a&nbsp;listenery,
+                    Java 2D/3D, knihovny AWT a&nbsp;Swing.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Kódovací konvence a&nbsp;styly, nástroje pro řízení překladu,
-                  logování; rezerva.
+                  <b>
+                    Ovládání uživatelských rozhraní, multimediální rozhraní.
+                  </b>
+                </td>
+              </tr>
+              <tr valign="baseline">
+                <td>
+                  <b>
+                    Distribuované programování - serializace, propojování modulů
+                    (middleware) a&nbsp;vzdálené volání funkcí, rozhraní Java
+                    RMI a&nbsp;další, např. ICE.
+                  </b>
+                </td>
+              </tr>
+              <tr valign="baseline">
+                <td>
+                  <b>
+                    Kódovací konvence a&nbsp;styly, nástroje pro řízení
+                    překladu, logování; rezerva.
+                  </b>
                 </td>
               </tr>
             </tbody>
@@ -558,22 +843,134 @@
             >)
           </h4>
         </li>
-        <div class="tablewrapper"><table cellpadding="0" cellspacing="0">
-            <tbody><tr></tr><td>Architektura počítače, struktura, organizace a&nbsp;podsystémy. Reprezentace, zobrazení a&nbsp;přenos informace (především čísel, IEEE-754) v&nbsp;počítači.</td></tr>
-            <tr><td>Procesor - ALU, von Neumannova architektura, formát instrukcí, jednocyklový procesor, řadič a&nbsp;řízení</td></tr>
-            <tr><td>Paměť - hierarchický koncept, technologie pamětí,  vyrovnávací paměti - cache, konzistence dat,  disková úložiště, zabezpečení dat a&nbsp;RAID</td></tr>
-            <tr><td>Paměť - virtuální paměť, správa paměti, MMU</td></tr>
-            <tr><td>Zřetězené vykonávaní instrukcí, hazardy, vyvažování stupňů zřetězení a&nbsp;časování; Superzřetězení</td></tr>
-            <tr><td>Vstupní a&nbsp;výstupní podsystém počítače, sběrnice, dvoubodové spoje, sítě, PCI a&nbsp;PCI express sběrnice, souvislý režim, HyperTransport, Quickpath Interconnect</td></tr>
-            <tr><td>Vstupní a&nbsp;výstupní podsystém počítače z pohledu software</td></tr>
-            <tr><td>Technické a&nbsp;organizační prostředky - vnější události, výjimky, reálný čas, přímý přístup do paměti, autonomní kanál</td></tr>
-            <tr><td>Sítě procesorů a&nbsp;počítačů, topologie sítí, komunikace - sítě typu LAN, MAN, WAN, sítě řídicích počítačů</td></tr>
-            <tr><td>Předávání parametrů funkcím a&nbsp;virtuálním instrukcím operačního systému. Zásobníkové rámce, registrová okna, přepínání režimů a&nbsp;realizace systémových volání.</td></tr>
-            <tr><td>Klasické registrově orientované architektury s&nbsp;komplexní instrukční sadou. Ukázka realizace MMU, cache, sběrnice.</td></tr>
-            <tr><td>Procesorová rodina INTEL x86, Od 8086 k&nbsp;EMT64. Hlavní zaměření na 32-bit a&nbsp;64-bit režimy s&nbsp;krátkým vysvětlením komplikací způsobených nutností zachování kompatability s&nbsp;16-bit 8086 a&nbsp;80286 segmentového přístupu a&nbsp;proč ho současné OS používají v&nbsp;co nejvíce minimalizované formě. Příklad SIMD instrukcí (MMX, SSE).</td></tr>
-            <tr><td>Přehled vývoje architektury a&nbsp;koncepcí CPU (RISC/CISC) - procesory ARM, ColdFire, SPARC a&nbsp;PowerPC a&nbsp;procesory pro vestavné aplikace</td></tr>
-            <tr><td>Mnohaúrovňová organizace počítače, virtuální stroje. Konvenční architektura a&nbsp;implementačně závislá mikroarchitektura. Přenositelný bytecode a&nbsp;virtuální programovací prostředí (Java, C#/.Net). Virtualizační techniky (např XEN, VMWARE) a&nbsp;paravirtualizace.</td></tr>
-            </tbody></table></div>
+        <div class="tablewrapper">
+          <table cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td>
+                  <b
+                    >Architektura počítače, struktura, organizace
+                    a&nbsp;podsystémy. Reprezentace, zobrazení a&nbsp;přenos
+                    informace (především čísel, IEEE-754) v&nbsp;počítači.</b
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b
+                    >Procesor - ALU, von Neumannova architektura, formát
+                    instrukcí, jednocyklový procesor, řadič a&nbsp;řízení</b
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b
+                    >Paměť - hierarchický koncept, technologie pamětí,
+                    vyrovnávací paměti - cache, konzistence dat, disková
+                    úložiště, zabezpečení dat a&nbsp;RAID</b
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><b>Paměť - virtuální paměť, správa paměti, MMU</b></td>
+              </tr>
+              <tr>
+                <td>
+                  <b
+                    >Zřetězené vykonávaní instrukcí, hazardy, vyvažování stupňů
+                    zřetězení a&nbsp;časování; Superzřetězení</b
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b
+                    >Vstupní a&nbsp;výstupní podsystém počítače, sběrnice,
+                    dvoubodové spoje, sítě, PCI a&nbsp;PCI express sběrnice,
+                    souvislý režim, HyperTransport, Quickpath Interconnect</b
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b
+                    >Vstupní a&nbsp;výstupní podsystém počítače z pohledu
+                    software</b
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b
+                    >Technické a&nbsp;organizační prostředky - vnější události,
+                    výjimky, reálný čas, přímý přístup do paměti, autonomní
+                    kanál</b
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b
+                    >Sítě procesorů a&nbsp;počítačů, topologie sítí, komunikace
+                    - sítě typu LAN, MAN, WAN, sítě řídicích počítačů</b
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b
+                    >Předávání parametrů funkcím a&nbsp;virtuálním instrukcím
+                    operačního systému. Zásobníkové rámce, registrová okna,
+                    přepínání režimů a&nbsp;realizace systémových volání.</b
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b
+                    >Klasické registrově orientované architektury
+                    s&nbsp;komplexní instrukční sadou. Ukázka realizace MMU,
+                    cache, sběrnice.</b
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b
+                    >Procesorová rodina INTEL x86, Od 8086 k&nbsp;EMT64. Hlavní
+                    zaměření na 32-bit a&nbsp;64-bit režimy s&nbsp;krátkým
+                    vysvětlením komplikací způsobených nutností zachování
+                    kompatability s&nbsp;16-bit 8086 a&nbsp;80286 segmentového
+                    přístupu a&nbsp;proč ho současné OS používají v&nbsp;co
+                    nejvíce minimalizované formě. Příklad SIMD instrukcí (MMX,
+                    SSE).</b
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b
+                    >Přehled vývoje architektury a&nbsp;koncepcí CPU (RISC/CISC)
+                    - procesory ARM, ColdFire, SPARC a&nbsp;PowerPC
+                    a&nbsp;procesory pro vestavné aplikace</b
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b
+                    >Mnohaúrovňová organizace počítače, virtuální stroje.
+                    Konvenční architektura a&nbsp;implementačně závislá
+                    mikroarchitektura. Přenositelný bytecode a&nbsp;virtuální
+                    programovací prostředí (Java, C#/.Net). Virtualizační
+                    techniky (např XEN, VMWARE) a&nbsp;paravirtualizace.</b
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         <li>
           <h4>
@@ -590,76 +987,101 @@
             <tbody>
               <tr valign="baseline">
                 <td>
-                  Úvod, definice základních pojmů, model ISO/OSI, funkce vrstev
+                  <b>
+                    Úvod, definice základních pojmů, model ISO/OSI, funkce
+                    vrstev
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Metalické, optické a&nbsp;bezdrátové fyzické médium,
-                  vlastnosti, parametry
+                  <b>
+                    Metalické, optické a&nbsp;bezdrátové fyzické médium,
+                    vlastnosti, parametry
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Entropie informačního zdroje, zdrojové kódování, kapacita
-                  komunikačního kanálu
+                  <b>
+                    Entropie informačního zdroje, zdrojové kódování, kapacita
+                    komunikačního kanálu
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Modely komunikačních kanálů (AWGN, BSC, ...), modulace,
-                  komunikace v&nbsp;rozprostřeném spektru
+                  <b>
+                    Modely komunikačních kanálů (AWGN, BSC, ...), modulace,
+                    komunikace v&nbsp;rozprostřeném spektru
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Typy datových přenosů, metody sdílení kapacity kanálu, fyzické
-                  a&nbsp;logické topologie
+                  <b>
+                    Typy datových přenosů, metody sdílení kapacity kanálu,
+                    fyzické a&nbsp;logické topologie
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Metody řízení přístupu ke sdílenému médiu a&nbsp;jejich
-                  vlastnosti, adresace
+                  <b>
+                    Metody řízení přístupu ke sdílenému médiu a&nbsp;jejich
+                    vlastnosti, adresace
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
-                <td>ARQ metody, kódy pro detekci a&nbsp;opravy chyb</td>
+                <td><b>ARQ metody, kódy pro detekci a&nbsp;opravy chyb</b></td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Utajování informace, symetrické a&nbsp;asymetrické šifry,
-                  distribuce klíčů, certifikáty, digitální podpis
-                </td>
-              </tr>
-              <tr valign="baseline">
-                <td>
-                  Propojování distribuovaných systémů, směrování, metody řízení
-                  datového toku, QoS
-                </td>
-              </tr>
-              <tr valign="baseline">
-                <td>Technologie LAN (IEEE802.3), spanning tree, VLAN, PoE</td>
-              </tr>
-              <tr valign="baseline">
-                <td>
-                  Technologie WLAN (IEEE802.11), DCF, PCF, virtuální odposlech
+                  <b>
+                    Utajování informace, symetrické a&nbsp;asymetrické šifry,
+                    distribuce klíčů, certifikáty, digitální podpis
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Protokolový zásobník TCP/IP, IP protokol, ARP, DHCP, ICMP,
-                  NAT, DNS
+                  <b>
+                    Propojování distribuovaných systémů, směrování, metody
+                    řízení datového toku, QoS
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Transportní protokoly UDP, TCP, RTP, řízení datového toku,
-                  congestion control
+                  <b>Technologie LAN (IEEE802.3), spanning tree, VLAN, PoE</b>
                 </td>
               </tr>
               <tr valign="baseline">
-                <td>Správa počítačových sítí, SNMP, RMON</td>
+                <td>
+                  <b>
+                    Technologie WLAN (IEEE802.11), DCF, PCF, virtuální odposlech
+                  </b>
+                </td>
+              </tr>
+              <tr valign="baseline">
+                <td>
+                  <b>
+                    Protokolový zásobník TCP/IP, IP protokol, ARP, DHCP, ICMP,
+                    NAT, DNS
+                  </b>
+                </td>
+              </tr>
+              <tr valign="baseline">
+                <td>
+                  <b>
+                    Transportní protokoly UDP, TCP, RTP, řízení datového toku,
+                    congestion control
+                  </b>
+                </td>
+              </tr>
+              <tr valign="baseline">
+                <td><b>Správa počítačových sítí, SNMP, RMON</b></td>
               </tr>
             </tbody>
           </table>
@@ -676,53 +1098,63 @@
           <table cellpadding="0" cellspacing="0">
             <tbody>
               <tr valign="baseline">
-                <td>Funkce více proměnných, limita, spojitost.</td>
+                <td><b>Funkce více proměnných, limita, spojitost.</b></td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Směrové a&nbsp;parciální derivace, diferenciál
-                  a&nbsp;gradient.
+                  <b>
+                    Směrové a&nbsp;parciální derivace, diferenciál
+                    a&nbsp;gradient.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
-                <td>Derivace složené funkce, derivace vyšších řádů.</td>
+                <td><b>Derivace složené funkce, derivace vyšších řádů.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Jakobiho matice. Lokální extrémy.</td>
+                <td><b>Jakobiho matice. Lokální extrémy.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Vázané extrémy, Lagrangeova metoda.</td>
+                <td><b>Vázané extrémy, Lagrangeova metoda.</b></td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Dvojný a&nbsp;trojný integrál, Fubiniho věta a&nbsp;věta
-                  o&nbsp;substituci.
+                  <b>
+                    Dvojný a&nbsp;trojný integrál, Fubiniho věta a&nbsp;věta
+                    o&nbsp;substituci.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Křivkový integrál funkce, křivkový integrál pole, aplikace.
+                  <b>
+                    Křivkový integrál funkce, křivkový integrál pole, aplikace.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Plošný integrál funkce a&nbsp;pole a&nbsp;jeho aplikace.
+                  <b>
+                    Plošný integrál funkce a&nbsp;pole a&nbsp;jeho aplikace.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
-                <td>Gaussova, Greenova, Stokesova věta.</td>
+                <td><b>Gaussova, Greenova, Stokesova věta.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Potenciál vektorového pole.</td>
+                <td><b>Potenciál vektorového pole.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Základní kritéria konvergence řad.</td>
+                <td><b>Základní kritéria konvergence řad.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Funkční řady, Weierstrasseovo kritérium. Mocninné řady.</td>
+                <td>
+                  <b>Funkční řady, Weierstrasseovo kritérium. Mocninné řady.</b>
+                </td>
               </tr>
               <tr valign="baseline">
-                <td>Taylorovy rozvoje a&nbsp;Fourierovy řady.</td>
+                <td><b>Taylorovy rozvoje a&nbsp;Fourierovy řady.</b></td>
               </tr>
             </tbody>
           </table>
@@ -742,58 +1174,71 @@
             <tbody>
               <tr valign="baseline">
                 <td>
-                  Náhodný jev, definice pravděpodobnosti, základní
-                  pravděpodobnostní prostory.
+                  <b>
+                    Náhodný jev, definice pravděpodobnosti, základní
+                    pravděpodobnostní prostory.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
-                <td>Podmíněná pravděpodobnost, Bayesova věta.</td>
+                <td><b>Podmíněná pravděpodobnost, Bayesova věta.</b></td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Náhodná veličina, distribuční funkce, hustota
-                  pravděpodobnosti.
-                </td>
-              </tr>
-              <tr valign="baseline">
-                <td>
-                  Charakteristiky náhodné veličiny - střední hodnota, rozptyl.
-                </td>
-              </tr>
-              <tr valign="baseline">
-                <td>Základní diskrétní rozdělení pravděpodobnosti.</td>
-              </tr>
-              <tr valign="baseline">
-                <td>Základní spojitá rozdělení pravděpodobnosti.</td>
-              </tr>
-              <tr valign="baseline">
-                <td>Nezávislost náhodných veličin.</td>
-              </tr>
-              <tr valign="baseline">
-                <td>Transformace a&nbsp;součty náhodných veličin.</td>
-              </tr>
-              <tr valign="baseline">
-                <td>
-                  Náhodný vektor, rozdělení pravděpodobnosti náhodného vektoru.
+                  <b>
+                    Náhodná veličina, distribuční funkce, hustota
+                    pravděpodobnosti.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Charakteristiky náhodného vektoru - vektor středních hodnot,
-                  korelační matice.
+                  <b>
+                    Charakteristiky náhodné veličiny - střední hodnota, rozptyl.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
-                <td>Popisná statistika.</td>
+                <td><b>Základní diskrétní rozdělení pravděpodobnosti.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Bodový odhad parametru, metoda maximální věrohodnosti.</td>
+                <td><b>Základní spojitá rozdělení pravděpodobnosti.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Intervalový odhad parametru.</td>
+                <td><b>Nezávislost náhodných veličin.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Základy testování hypotéz.</td>
+                <td><b>Transformace a&nbsp;součty náhodných veličin.</b></td>
+              </tr>
+              <tr valign="baseline">
+                <td>
+                  <b>
+                    Náhodný vektor, rozdělení pravděpodobnosti náhodného
+                    vektoru.
+                  </b>
+                </td>
+              </tr>
+              <tr valign="baseline">
+                <td>
+                  <b>
+                    Charakteristiky náhodného vektoru - vektor středních hodnot,
+                    korelační matice.
+                  </b>
+                </td>
+              </tr>
+              <tr valign="baseline">
+                <td><b>Popisná statistika.</b></td>
+              </tr>
+              <tr valign="baseline">
+                <td>
+                  <b>Bodový odhad parametru, metoda maximální věrohodnosti.</b>
+                </td>
+              </tr>
+              <tr valign="baseline">
+                <td><b>Intervalový odhad parametru.</b></td>
+              </tr>
+              <tr valign="baseline">
+                <td><b>Základy testování hypotéz.</b></td>
               </tr>
             </tbody>
           </table>
@@ -813,59 +1258,81 @@
           <table cellpadding="0" cellspacing="0">
             <tbody>
               <tr valign="baseline">
-                <td>Řád růstu funkcí, asymptotická složitost algoritmu</td>
-              </tr>
-              <tr valign="baseline">
                 <td>
-                  Rekurze, složitost rekurentních algoritmů, mistrovská věta
-                </td>
-              </tr>
-              <tr valign="baseline">
-                <td>Stromy, binární stromy, prohledávání s&nbsp;návratem</td>
-              </tr>
-              <tr valign="baseline">
-                <td>Fronta, graf, průchod stromem/grafem do šířky/hloubky</td>
-              </tr>
-              <tr valign="baseline">
-                <td>Vyhledávani v&nbsp;poli, binární vyhledávací stromy</td>
-              </tr>
-              <tr valign="baseline">
-                <td>AVL a&nbsp;B- stromy</td>
-              </tr>
-              <tr valign="baseline">
-                <td>
-                  Řazení, Insert Sort, SelectionSort, Bubble Sort, QuickSort
-                </td>
-              </tr>
-              <tr valign="baseline">
-                <td>Řazení, Merge Sort, Halda, Heap Sort</td>
-              </tr>
-              <tr valign="baseline">
-                <td>Řazení, Radix sort, Counting Sort, Bucket Sort</td>
-              </tr>
-              <tr valign="baseline">
-                <td>
-                  Dynamické programování, struktura optimálního řešení,
-                  odstranění rekurze, optimální BVS
+                  <b>Řád růstu funkcí, asymptotická složitost algoritmu</b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Dynamické programování, nejdelší společná podposloupnost,
-                  optimální násobení matic, problém batohu
+                  <b>
+                    Rekurze, složitost rekurentních algoritmů, mistrovská věta
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Hashing, otevřené a&nbsp;zřetězené tabulky, double hashing
+                  <b>Stromy, binární stromy, prohledávání s&nbsp;návratem</b>
                 </td>
               </tr>
               <tr valign="baseline">
-                <td>Hashing, srůstající tabulky, univerzální hashování,</td>
+                <td>
+                  <b>Fronta, graf, průchod stromem/grafem do šířky/hloubky</b>
+                </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Řazení vícedimenzionálních dat, porovnání řadících algoritmů
+                  <b>Vyhledávani v&nbsp;poli, binární vyhledávací stromy</b>
+                </td>
+              </tr>
+              <tr valign="baseline">
+                <td><b>AVL a&nbsp;B- stromy</b></td>
+              </tr>
+              <tr valign="baseline">
+                <td>
+                  <b>
+                    Řazení, Insert Sort, SelectionSort, Bubble Sort, QuickSort
+                  </b>
+                </td>
+              </tr>
+              <tr valign="baseline">
+                <td><b>Řazení, Merge Sort, Halda, Heap Sort</b></td>
+              </tr>
+              <tr valign="baseline">
+                <td><b>Řazení, Radix sort, Counting Sort, Bucket Sort</b></td>
+              </tr>
+              <tr valign="baseline">
+                <td>
+                  <b>
+                    Dynamické programování, struktura optimálního řešení,
+                    odstranění rekurze, optimální BVS
+                  </b>
+                </td>
+              </tr>
+              <tr valign="baseline">
+                <td>
+                  <b>
+                    Dynamické programování, nejdelší společná podposloupnost,
+                    optimální násobení matic, problém batohu
+                  </b>
+                </td>
+              </tr>
+              <tr valign="baseline">
+                <td>
+                  <b>
+                    Hashing, otevřené a&nbsp;zřetězené tabulky, double hashing
+                  </b>
+                </td>
+              </tr>
+              <tr valign="baseline">
+                <td>
+                  <b>Hashing, srůstající tabulky, univerzální hashování,</b>
+                </td>
+              </tr>
+              <tr valign="baseline">
+                <td>
+                  <b>
+                    Řazení vícedimenzionálních dat, porovnání řadících algoritmů
+                  </b>
                 </td>
               </tr>
             </tbody>
@@ -887,79 +1354,106 @@
             <tbody>
               <tr valign="baseline">
                 <td>
-                  Architektura počítače, historie a&nbsp;typy OS, komponenty OS.
-                </td>
-              </tr>
-              <tr valign="baseline">
-                <td>Obsluha přerušení a&nbsp;vyjímek. Systémová volání.</td>
-              </tr>
-              <tr valign="baseline">
-                <td>
-                  Procesy, vlákna, přepínání kontextu, rozvrhování (plánování),
-                  lokální vs. globalní plánování, migrace vláken.
+                  <b>
+                    Architektura počítače, historie a&nbsp;typy OS, komponenty
+                    OS.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Synchronizace, časově závislé chyby, přístup ke sdíleným
-                  zdrojům (nepreemptivní sekce, semafory, mutexy, spinlocky,
-                  Java synchronize), uváznutí.
+                  <b>Obsluha přerušení a&nbsp;vyjímek. Systémová volání.</b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Meziprocesní komunikace (signály, roury, předávání zpráv)
+                  <b>
+                    Procesy, vlákna, přepínání kontextu, rozvrhování
+                    (plánování), lokální vs. globalní plánování, migrace vláken.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Virtuální paměť, výpadky stránek, odkládání, copy-on-write,
-                  spouštění procesů, relokace, dynamické knihovny.
+                  <b>
+                    Synchronizace, časově závislé chyby, přístup ke sdíleným
+                    zdrojům (nepreemptivní sekce, semafory, mutexy, spinlocky,
+                    Java synchronize), uváznutí.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Správa paměti, paměťové alokátory (v&nbsp;jádře
-                  a&nbsp;uživatelském prostoru, halda).
+                  <b>
+                    Meziprocesní komunikace (signály, roury, předávání zpráv)
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Bezpečnost (security), trusted computing base, buffer
-                  overflow, ASLR, antiviry, šifrování.
+                  <b>
+                    Virtuální paměť, výpadky stránek, odkládání, copy-on-write,
+                    spouštění procesů, relokace, dynamické knihovny.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Vstup/výstup, ukládání dat, síťová rozhraní, USB, HID,
-                  ovladače zařízení (Linux, Win).
+                  <b>
+                    Správa paměti, paměťové alokátory (v&nbsp;jádře
+                    a&nbsp;uživatelském prostoru, halda).
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Souborové systémy, žurnálování, integrita dat, disková
-                  vyrovnávací paměť.
+                  <b>
+                    Bezpečnost (security), trusted computing base, buffer
+                    overflow, ASLR, antiviry, šifrování.
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Grafický subsystém, trame buffer, HW akcelerace, paralelní
-                  výpočty.
-                </td>
-              </tr>
-              <tr valign="baseline">
-                <td>Virtualizace.</td>
-              </tr>
-              <tr valign="baseline">
-                <td>
-                  Mobilní OS, struktura OS Android a&nbsp;jeho aplikací,
-                  spolupráce s&nbsp;cloudovými službami
+                  <b>
+                    Vstup/výstup, ukládání dat, síťová rozhraní, USB, HID,
+                    ovladače zařízení (Linux, Win).
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Duševní vlastnictví a&nbsp;jeho ochrana, open source
-                  softwarové licence, ekonomické aspekty využití open source
+                  <b>
+                    Souborové systémy, žurnálování, integrita dat, disková
+                    vyrovnávací paměť.
+                  </b>
+                </td>
+              </tr>
+              <tr valign="baseline">
+                <td>
+                  <b>
+                    Grafický subsystém, trame buffer, HW akcelerace, paralelní
+                    výpočty.
+                  </b>
+                </td>
+              </tr>
+              <tr valign="baseline">
+                <td><b>Virtualizace.</b></td>
+              </tr>
+              <tr valign="baseline">
+                <td>
+                  <b>
+                    Mobilní OS, struktura OS Android a&nbsp;jeho aplikací,
+                    spolupráce s&nbsp;cloudovými službami
+                  </b>
+                </td>
+              </tr>
+              <tr valign="baseline">
+                <td>
+                  <b>
+                    Duševní vlastnictví a&nbsp;jeho ochrana, open source
+                    softwarové licence, ekonomické aspekty využití open source
+                  </b>
                 </td>
               </tr>
             </tbody>
@@ -979,33 +1473,35 @@
           <table cellpadding="0" cellspacing="0">
             <tbody>
               <tr valign="baseline">
-                <td>Konceptuální model</td>
+                <td><b>Konceptuální model</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Relační model</td>
+                <td><b>Relační model</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Funkční závislosti</td>
+                <td><b>Funkční závislosti</b></td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Integritní omezení, referenční integrita, normální formy
+                  <b>
+                    Integritní omezení, referenční integrita, normální formy
+                  </b>
                 </td>
               </tr>
               <tr valign="baseline">
-                <td>SQL, práce se schématem, práce s&nbsp;daty</td>
+                <td><b>SQL, práce se schématem, práce s&nbsp;daty</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Optimalizace dotazů, indexy</td>
+                <td><b>Optimalizace dotazů, indexy</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Uložené procedury, triggery</td>
+                <td><b>Uložené procedury, triggery</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Objektově relační mapování, JPA</td>
+                <td><b>Objektově relační mapování, JPA</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Moderní trendy databázových systémů</td>
+                <td><b>Moderní trendy databázových systémů</b></td>
               </tr>
             </tbody>
           </table>
@@ -1023,43 +1519,47 @@
           <table cellpadding="0" cellspacing="0">
             <tbody>
               <tr valign="baseline">
-                <td>Úvod, HW, False Sharing .</td>
+                <td><b>Úvod, HW, False Sharing .</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Vlákna v&nbsp;C++11.</td>
+                <td><b>Vlákna v&nbsp;C++11.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>OpenMP.</td>
+                <td><b>OpenMP.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Datové struktury s&nbsp;vícevláknovým přístupem.</td>
+                <td><b>Datové struktury s&nbsp;vícevláknovým přístupem.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Techniky dekompozice.</td>
+                <td><b>Techniky dekompozice.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Paralelní řadící algoritmy a&nbsp;vektorove instrukce.</td>
+                <td>
+                  <b>Paralelní řadící algoritmy a&nbsp;vektorove instrukce.</b>
+                </td>
               </tr>
               <tr valign="baseline">
-                <td>Základní paralelní maticové algoritmy.</td>
+                <td><b>Základní paralelní maticové algoritmy.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Úvod do distribuovaných systémů.Detekce selhání.</td>
+                <td><b>Úvod do distribuovaných systémů.Detekce selhání.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Čas a&nbsp;kauzalita v&nbsp;distribuovaných systémech.</td>
+                <td>
+                  <b>Čas a&nbsp;kauzalita v&nbsp;distribuovaných systémech.</b>
+                </td>
               </tr>
               <tr valign="baseline">
-                <td>Globální snapshot.</td>
+                <td><b>Globální snapshot.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Vzájemné vyloučení procesů.</td>
+                <td><b>Vzájemné vyloučení procesů.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Volba lídra.</td>
+                <td><b>Volba lídra.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Problém konsensu.</td>
+                <td><b>Problém konsensu.</b></td>
               </tr>
             </tbody>
           </table>
@@ -1078,46 +1578,52 @@
           <table cellpadding="0" cellspacing="0">
             <tbody>
               <tr valign="baseline">
-                <td>Obecná formulace úloh spojité optimalizace.</td>
-              </tr>
-              <tr valign="baseline">
-                <td>Přeurčené lineární soustavy, metoda nejmenších čtverců.</td>
-              </tr>
-              <tr valign="baseline">
-                <td>Minimalizace kvadratických funkcí bez omezení.</td>
-              </tr>
-              <tr valign="baseline">
-                <td>Použití SVD v&nbsp;optimalizaci.</td>
+                <td><b>Obecná formulace úloh spojité optimalizace.</b></td>
               </tr>
               <tr valign="baseline">
                 <td>
-                  Algoritmy na volné lokální extrémy (gradientní, Newtonova,
-                  Newtonova-Gaussova, Levenbergova-Marquardtova metoda).
+                  <b>Přeurčené lineární soustavy, metoda nejmenších čtverců.</b>
                 </td>
               </tr>
               <tr valign="baseline">
-                <td>Lineární programování.</td>
+                <td><b>Minimalizace kvadratických funkcí bez omezení.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Simplexová metoda.</td>
+                <td><b>Použití SVD v&nbsp;optimalizaci.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Konvexní množiny a&nbsp;mnohostěny. Konvexní funkce.</td>
+                <td>
+                  <b>
+                    Algoritmy na volné lokální extrémy (gradientní, Newtonova,
+                    Newtonova-Gaussova, Levenbergova-Marquardtova metoda).
+                  </b>
+                </td>
               </tr>
               <tr valign="baseline">
-                <td>Úvod do konvexní optimalizace.</td>
+                <td><b>Lineární programování.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Lagrangeův formalismus, KKT podmínky.</td>
+                <td><b>Simplexová metoda.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Lagrangeova dualita. Dualita v&nbsp;LP.</td>
+                <td>
+                  <b>Konvexní množiny a&nbsp;mnohostěny. Konvexní funkce.</b>
+                </td>
               </tr>
               <tr valign="baseline">
-                <td>Příklady nekonvexních úloh.</td>
+                <td><b>Úvod do konvexní optimalizace.</b></td>
               </tr>
               <tr valign="baseline">
-                <td>Úvod do vícekriteriální optimalizace.</td>
+                <td><b>Lagrangeův formalismus, KKT podmínky.</b></td>
+              </tr>
+              <tr valign="baseline">
+                <td><b>Lagrangeova dualita. Dualita v&nbsp;LP.</b></td>
+              </tr>
+              <tr valign="baseline">
+                <td><b>Příklady nekonvexních úloh.</b></td>
+              </tr>
+              <tr valign="baseline">
+                <td><b>Úvod do vícekriteriální optimalizace.</b></td>
               </tr>
             </tbody>
           </table>
